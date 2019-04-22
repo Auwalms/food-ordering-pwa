@@ -1,0 +1,40 @@
+.brand-name {
+    letter-spacing: 4px;
+    font-family: cursive;
+}
+nav a:hover {
+    text-decoration: none;
+}
+main.main-content {
+    width: 100vw;
+    height: 90vh;
+    /* background-color: #eaf0f5; */
+}
+footer {
+    text-align: center;
+    font-size: 0.8rem;
+    height: 25px;
+}
+section ul#category-grid {
+    list-style: none;
+}
+div.row {
+    margin: auto;
+}
+a.category {
+    margin-top: 4%;
+}
+.card-img {
+    height: 300px;
+}
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    main.main-content {
+        width: 80vw;
+        height: 90vh;
+        margin: auto;
+    }
+    section ul#category-grid li {
+        width: 35%;
+    }
+}
