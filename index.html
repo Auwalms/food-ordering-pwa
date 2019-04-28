@@ -30,22 +30,27 @@
             >
                 <h5 class="my-0 mr-md-auto brand-name">AuwSum Kitchen</h5>
                 <nav class="my-2 my-md-0 mr-md-3">
-                    <a class="p-2 text-dark" href="#">Cart</a>
-                    <a class="p-2 text-dark" href="#">Order</a>
+                    <a class="p-2 text-dark active" href="/">Home</a>
+                    <a class="p-2 text-dark" href="/orders.html">Orders</a>
                     <a class="p-2 text-dark" href="#">About Us</a>
                 </nav>
             </nav>
         </header>
-        <main class="main-content bg-light">
+        <main role="main " class="container">
             <section>
+                <div id="circle">
+                    <div class="loader">
+                        <div class="loader">
+                            <div class="loader">
+                                <div class="loader"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="row" id="categories-container"></div>
             </section>
         </main>
-        <footer>
-            Copyright (c) 2019
-            <a href="/"><span class="brand-name"> AuwSum Kitchen</span></a> All
-            Rights Reserved.
-        </footer>
+
         <script src="/scripts/jquery-3.3.1.slim.min.js"></script>
         <script src="/scripts/bootstrap.min.js"></script>
         <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-app.js"></script>

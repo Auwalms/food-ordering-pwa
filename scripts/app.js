@@ -2,14 +2,14 @@
 
 const categoriesContainer = document.querySelector("#categories-container");
 
-window.addEventListener("DOMContentLoaded", event => {
+window.addEventListener("DOMContentLoaded", () => {
     getCategories();
 });
 
 const createCategoryHTML = category => {
     const categoryPath = document.createElement("a");
     categoryPath.classList.add("col-md-6", "col-lg-4", "category");
-    categoryPath.href = `${category.path}.html`;
+    categoryPath.href = dishUrl(category.id);
     categoryPath.dataset.id = category.id;
 
     const cardDiv = document.createElement("div");
@@ -33,4 +33,16 @@ const createCategoryHTML = category => {
     categoryPath.appendChild(cardDiv);
 
     return categoryPath;
+};
+
+const dishUrl = dishId => {
+    return `./dish.html?id=${dishId}`;
+};
+
+const showLoading = () => {
+    document.querySelector("#circle").className = "hidden";
+};
+
+const hideLoading = () => {
+    document.querySelector("#circle").className = "hidden";
 };
