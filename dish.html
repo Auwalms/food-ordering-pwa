@@ -5,10 +5,11 @@
 <!--[if gt IE 8]><!-->
 <html class="no-js" lang="en">
     <!--<![endif]-->
+
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>AuwSum Kitchen</title>
+        <title>Dish &middot; AuwSum Kitchen</title>
         <meta
             name="description"
             content="This app gives users the ability to check and order food items and get it delivered to their door"
@@ -17,6 +18,7 @@
         <link rel="stylesheet" href="/styles/bootstrap.min.css" />
         <link rel="stylesheet" href="/styles/app.css" />
     </head>
+
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">
@@ -30,13 +32,13 @@
             >
                 <h5 class="my-0 mr-md-auto brand-name">AuwSum Kitchen</h5>
                 <nav class="my-2 my-md-0 mr-md-3">
-                    <a class="p-2 text-dark active" href="/">Home</a>
-                    <a class="p-2 text-dark" href="/orders.html">Orders</a>
+                    <a class="p-2 text-dark" href="/">Home</a>
+                    <a class="p-2 text-dark" href="/orders.html">Order</a>
                     <a class="p-2 text-dark" href="#">About Us</a>
                 </nav>
             </nav>
         </header>
-        <main role="main " class="container">
+        <main role="main" class="container">
             <section>
                 <div id="circle">
                     <div class="loader">
@@ -47,7 +49,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="row" id="categories-container"></div>
+                <h2 class="text-center text-uppercase" id="page-title"></h2>
+                <div class="row" id="dish-container"></div>
             </section>
         </main>
 
@@ -57,5 +60,6 @@
         <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-firestore.js"></script>
         <script src="/scripts/firebaseOps.js"></script>
         <script src="/scripts/app.js"></script>
+        <script src="/scripts/dishes.js"></script>
     </body>
 </html>
