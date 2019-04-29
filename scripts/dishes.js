@@ -97,5 +97,5 @@ const getOrderDetails = event => {
     order.price = parseInt(targetItem.price);
     order.id = targetItem.id;
     order.name = targetItem.name;
-    // submitOrder(order);
+    submitOrder(order);
 };
