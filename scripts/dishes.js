@@ -57,13 +57,13 @@ const createDishesListing = dish => {
     imageTitle.innerText = dish.name;
 
     const cardFooter = document.createElement("div");
-    cardFooter.classList.add("card-footer", "text-muted");
+    cardFooter.className = "card-footer";
 
     const priceContainer = document.createElement("h5");
     priceContainer.className = "price-container";
 
     const priceSpan = document.createElement("span");
-    priceSpan.id = "dish-price";
+    priceSpan.className = "dish-price";
     priceSpan.innerText = `₦${dish.price}`;
 
     const addToCartSpan = document.createElement("span");
@@ -91,6 +91,7 @@ const createDishesListing = dish => {
     return dishDiv;
 };
 const getOrderDetails = event => {
+    console.log(event);
     const targetItem = event.target.dataset;
     const order = {};
     order.price = parseInt(targetItem.price);
