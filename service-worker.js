@@ -78,6 +78,7 @@ self.addEventListener("fetch", event => {
                             cache.put(event.request, newResponseToCache);
                         })
                         .catch(error => console.error(error));
+                    return response;
                 })
                 .catch(err => console.error(err));
         })
