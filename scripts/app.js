@@ -46,3 +46,14 @@ const showLoading = () => {
 const hideLoading = () => {
     document.querySelector("#circle").className = "hidden";
 };
+
+if ("serviceWorker" in navigator) {
+    navigator.serviceWorker
+        .register("/service-worker.js")
+        .then(reg => {
+            console.log("Service Worker Registered Successfully");
+        })
+        .catch(err => {
+            console.error("Failed to register Service Worker with ", err);
+        });
+}

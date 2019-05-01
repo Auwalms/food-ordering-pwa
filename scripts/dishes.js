@@ -7,22 +7,22 @@ const dishId = window.location.search.split("=").pop();
 
 window.addEventListener("DOMContentLoaded", () => {
     switch (dishId) {
-        case "aa1":
-            showDishContent("snack");
-            break;
-        case "aa2":
+        case "1":
             showDishContent("rice");
             break;
-        case "aa3":
-            showDishContent("swallow");
+        case "2":
+            showDishContent("snack");
             break;
-        case "aa4":
+        case "3":
             showDishContent("soup");
             break;
-        case "aa5":
+        case "4":
+            showDishContent("swallow");
+            break;
+        case "5":
             showDishContent("stew");
             break;
-        case "aa6":
+        case "6":
             showDishContent("drink");
             break;
 
@@ -91,7 +91,6 @@ const createDishesListing = dish => {
     return dishDiv;
 };
 const getOrderDetails = event => {
-    console.log(event);
     const targetItem = event.target.dataset;
     const order = {};
     order.price = parseInt(targetItem.price);
